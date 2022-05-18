@@ -6,7 +6,7 @@ import React, { useState } from "react";
 // uh oh, not asynchrous programming!!
 async function getWebscrapeInfo(url) {
   return axios
-    .get("/webscrape", {
+    .get("/api/webscrape", {
       params: {
         url: url,
       },
