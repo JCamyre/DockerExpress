@@ -18,3 +18,8 @@ app.get("/webscrape", (req, res) => {
   res.send(req);
 });
 // could also do this like /webscrape/:url
+
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(`Listening on port: ${PORT}`);
+});
