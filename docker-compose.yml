@@ -15,10 +15,10 @@ services:
   api:
     build:
       dockerfile: Dockerfile
-      context: ./api
+      context: "./api"
     volumes:
       - /app/node-modules
-      - ./server:/app
+      - ./api:/app
     
   frontend:
     stdin_open: true
@@ -29,4 +29,4 @@ services:
       context: ./frontend
     volumes:
       - /app/node_modules
-      - ./client:/app
+      - ./frontend:/app
