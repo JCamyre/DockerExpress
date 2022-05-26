@@ -19,7 +19,7 @@ And create a container to run frontend image:
 
 `docker run -it -p 4001:3000 frontend`
 
-Finally, run in the server folder:
+Finally, run in the root directory:
 
 `docker-compose up --build`
 
